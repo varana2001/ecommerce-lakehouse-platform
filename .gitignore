@@ -5,3 +5,4 @@ __pycache__/
 data/
 *.parquet
 .DS_Store
+PROJECT_STATUS.md
