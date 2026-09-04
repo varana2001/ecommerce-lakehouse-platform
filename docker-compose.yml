@@ -1,4 +1,3 @@
-version: "3.8"
 
 services:
   redpanda:
@@ -27,7 +26,7 @@ services:
     depends_on:
       - redpanda
     ports:
-      - "8080:8080"
+      - "8090:8080"
     environment:
       KAFKA_BROKERS: redpanda:9092
 
