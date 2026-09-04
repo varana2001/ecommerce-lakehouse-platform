@@ -1,0 +1,26 @@
+[project]
+name = "ecommerce-lakehouse-platform"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "VaranaNavadiyaNU", email = "navadiya.v@northeastern.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.43.88",
+    "dbt-core>=1.12.3",
+    "dbt-duckdb>=1.11.0",
+    "duckdb>=1.5.5",
+    "faker>=40.38.0",
+    "great-expectations>=1.22.0",
+    "kafka-python>=3.0.11",
+    "pyspark>=4.2.0",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+ecommerce-lakehouse-platform = "ecommerce_lakehouse_platform:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
